@@ -1,0 +1,79 @@
+libtest-taint-perl (1.08-1-deepin1) unstable; urgency=medium
+
+  * Rebuild
+
+ -- Deepin Packages Builder <packages@deepin.org>  Thu, 24 Nov 2022 07:24:27 +0800
+
+libtest-taint-perl (1.08-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-* headers for switch to salsa.debian.org
+
+  [ gregor herrmann ]
+  * Import upstream version 1.08.
+  * Add debian/upstream/metadata.
+  * Drop Test-Taint-1.06-Test-taintedness-on-X-instead-of-environment-
+    variabl.patch which was taken from an upstream ticket.
+  * Annotate test-only build dependencies with <!nocheck>.
+  * Declare compliance with Debian Policy 4.4.0.
+  * Bump debhelper-compat to 12.
+  * debian/watch: use uscan version 4.
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 15 Jul 2019 17:42:57 -0300
+
+libtest-taint-perl (1.06-2) unstable; urgency=medium
+
+  * Team upload.
+
+  [ gregor herrmann ]
+  * Strip trailing slash from metacpan URLs.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+  * Remove Pierre Neyron from Uploaders. Thanks for your work!
+  * Add patch from CPAN RT to fix random test failures caused by newer
+    Test::Simple. (Closes: #869418)
+  * Set bindnow linker flag in debian/rules.
+  * Declare compliance with Debian Policy 4.0.0.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 23 Jul 2017 14:12:40 +0200
+
+libtest-taint-perl (1.06-1) unstable; urgency=low
+
+  [ Nathan Handler ]
+  * debian/watch: Update to ignore development releases.
+
+  [ Pierre Neyron ]
+  * debian/copyright: Update Copyright format.
+
+  [ Ansgar Burchardt ]
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ gregor herrmann ]
+  * debian/control: update {versioned,alternative} (build) dependencies.
+
+  [ Salvatore Bonaccorso ]
+  * Change Vcs-Git to canonical URI (git://anonscm.debian.org)
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+
+  [ Florian Schlichting ]
+  * Import Upstream version 1.06.
+  * Bump Standards-Version to 3.9.4 (update to copyright-format 1.0).
+  * Switch dh compatibility to level 9 to enable passing of hardening flags.
+  * Switch to source format 3.0 (quilt).
+  * Switch to short-form debian/rules.
+  * Add myself to uploaders and copyright.
+
+ -- Florian Schlichting <fsfs@debian.org>  Sat, 10 Aug 2013 15:32:50 +0200
+
+libtest-taint-perl (1.04-1) unstable; urgency=low
+
+  * Initial Release. Closes: #497409 -- ITP
+
+ -- Pierre Neyron <pierre.neyron@free.fr>  Thu, 11 Sep 2008 23:15:23 +0200

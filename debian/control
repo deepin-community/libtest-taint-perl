@@ -1,0 +1,31 @@
+Source: libtest-taint-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Florian Schlichting <fsfs@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper-compat (= 12),
+               perl,
+               libtest-pod-perl <!nocheck>,
+               libtest-pod-coverage-perl <!nocheck>
+Standards-Version: 4.4.0
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libtest-taint-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libtest-taint-perl.git
+Homepage: https://metacpan.org/release/Test-Taint
+
+Package: libtest-taint-perl
+Architecture: any
+Depends: ${perl:Depends},
+         ${shlibs:Depends},
+         ${misc:Depends}
+Description: Module to test taintedness
+ The Test::Taint module provides tools to test taintedness.
+ Tainted data is data that comes from an unsafe source, such as the
+ command line, or, in the case of web apps, any GET or POST transactions.
+ Read the perlsec man page for details on why tainted data is bad,
+ and how to untaint the data.
+ .
+ When you're writing unit tests for code that deals with tainted data,
+ you'll want to have a way to provide tainted data for your routines to
+ handle, and easy ways to check and report on the taintedness of your data,
+ in standard Test::More style.

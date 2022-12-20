@@ -1,0 +1,35 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Test-Taint
+Upstream-Contact: Andy Lester
+Source: https://metacpan.org/release/Test-Taint
+
+Files: *
+Copyright: 2004, Andy Lester <andy@petdance.com>
+License: GPL-1+ or Artistic
+
+Files: ppport.h
+Copyright:
+    Copyright 2001, Paul Marquess (Version 2.x)
+    Copyright 1999, Kenneth Albanowski (Version 1.x)
+License: GPL-1+ or Artistic
+
+Files: debian/*
+Copyright: 2009, Pierre Neyron <pierre.neyron@free.fr>
+    2013, Florian Schlichting <fsfs@debian.org>
+License: GPL-1+ or Artistic
+
+License: Artistic
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the Artistic License, which comes with Perl.
+ .
+ On Debian systems, the complete text of the Artistic License can be
+ found in `/usr/share/common-licenses/Artistic'.
+
+License: GPL-1+
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 1, or (at your option)
+ any later version.
+ .
+ On Debian systems, the complete text of version 1 of the GNU General
+ Public License can be found in `/usr/share/common-licenses/GPL-1'.
